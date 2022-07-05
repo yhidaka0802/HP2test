@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+.header_txt {
+  text-align: center;
+}
+
+.header_txt small {
+  font-size: 32px;
+  display: block;
+  border-top: solid 2px #35A693;
+}
+
+.reservation_form {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.reservation_box {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.reservation_form_box {
+  height: 45px;
+  width: 55%;
+  padding-left: 12px;
+}
+
+.reservation_box._area {
+  margin-bottom: 0;
+}
+
+.reservation_form_ttl {
+  width: 40%;
+  height: 100%;
+  font-size: 18px;
+  line-height: 1.5;
+  position: relative;
+  top: 15px;
+}
+
+.reservation_form_ttl::before {
+  content: "必須";
+  position: absolute;
+  left: 40%;
+  top: -5px;
+  text-align: center;
+  width: 96px;
+  line-height: 32px;
+  font-size: 16px;
+  color: #c72930;
+  border: 1px solid #c72930;
+  border-radius: 2px;
+}

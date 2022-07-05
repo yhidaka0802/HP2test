@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+.header_txt {
+  text-align: center;
+}
+
+.header_txt small {
+  font-size: 32px;
+  display: block;
+  border-top: solid 2px #35A693;
+}
+
+.menu {
+  padding-bottom: 100px;
+}
+
+.menu_item {
+  display: flex;
+  width: 80%;
+  height: 300px;
+  box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, .1);
+  margin: 0 auto 40px;
+}
+
+.menu_item_img {
+  width: 50%;
+}
+
+.menu_item_txt {
+  padding: 16px 0 0 32px;
+}
+
+.menu_item_txt h3 {
+  font-size: 24px;
+}
+
+.menu_disc {
+  width: 300px;
+  margin-top: 25px;
+  margin-left: 20px;
+}
+
+.menu_disc div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}

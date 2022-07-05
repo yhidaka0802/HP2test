@@ -1,0 +1,247 @@
+@charset "UTF-8";
+
+body {
+  color: #000;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-family: 'Lato', '筑紫B丸ゴシック', '遊ゴシック' sans-serif;
+  line-height: 1.8;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+section {
+  width: 100%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  width: 100%;
+  background-color: #F2EDE1;
+}
+
+.header_all {
+  width: 100%;
+  height: 750px;
+}
+
+.header_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.header_ttl {
+  margin-left: 50px;
+  font-size: 50px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.header_ttl a{
+  color: #593a2e;
+}
+
+.header_right .insta_icon {
+  display: inline-block;
+  margin-right: 100px;
+  width: 60px;
+  height: 60px;
+}
+
+.header_right .insta_icon img {
+  width: 100%;
+  height: 100%;
+}
+
+header .drawer {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 100;
+  width: 24px;
+  border-top: solid 4px #593a2e;
+  cursor: pointer;
+}
+
+header .drawer::before,
+header .drawer::after {
+  position: relative;
+  display: block;
+  width: 24px;
+  height: 4px;
+  background: #593a2e;
+  content: "";
+  /* position: absolute;
+  right: 0; */
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+header .drawer::before {
+  top: 6px;
+}
+
+header .drawer::after {
+  top: 12px;
+}
+
+header nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: #593a2e;
+}
+
+header nav ul {
+  top: 20%;
+  display: block;
+  float: none;
+  text-align: center;
+}
+
+header nav ul li {
+  margin: 0 auto 20px;
+  padding-right: 0;
+  width: 40%;
+}
+
+header nav ul li a {
+  color: #fff;
+  font-size: 60px;
+  line-height: 2;
+}
+
+body.nav-open header .drawer {
+  border-top: 0;
+}
+
+body.nav-open header .drawer::before {
+  top: 9px;
+  transform: rotate(-45deg);
+}
+
+body.nav-open header .drawer::after {
+  top: 9px;
+  transform: rotate(45deg);
+}
+
+.header_visual {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.header_img {
+  position: absolute;
+  right: 0;
+  width: 90vw;
+  height: 660px;
+}
+
+.header_img img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.header_visual .header_txt {
+  position: absolute;
+  top: 200px;
+  left: 50px;
+  z-index: 5;
+  padding: 0 1%;
+  background-color: rgba(256, 256, 256, 0.9);
+  color: #593a2e;
+  font-size: 50px;
+}
+
+.section_ttl {
+  margin: 100px 0 50px;
+  text-align: center;
+}
+
+.section_ttl h2 {
+  color: #593a2e;
+  font-size: 50px;
+}
+
+footer {
+  padding: 50px 0 20px;
+  background: #40322B;
+  color: #fff;
+  text-align: center;
+}
+
+.footer_ttl {
+  margin-bottom: 40px;
+  font-size: 50px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.footer_ttl a{
+  color: #fff;
+}
+
+.footer_list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.footer_item {
+  margin-right: 28px;
+  padding-right: 28px;
+  border-right: solid 3px #35A693;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.footer_item a {
+  color: #fff;
+}
+
+.footer_item a:hover{
+  color: #35A693;
+}
+
+.footer_item:last-child {
+  padding-right: 0;
+  margin-right: 0;
+  border-right: none;
+}
+
+.footer_insta {
+  margin: 0 auto 40px;
+  width: 64px;
+}
+
+.footer_insta:hover {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+
+.footer_txt {
+  font-size: 15px;
+}

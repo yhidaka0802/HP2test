@@ -1,0 +1,176 @@
+@charset "UTF-8";
+
+.news {
+  margin: 0 auto;
+  width: 1000px;
+  text-align: center;
+}
+
+.news_list li {
+  margin: 0 auto 10px;
+  padding-bottom: 10px;
+  width: 500px;
+  border-bottom: solid 1px #707070;
+  font-size: 20px;
+}
+
+.news_list li:last-child {
+  margin-bottom: 100px;
+  border-bottom: none;
+}
+
+.link .inner {
+  display: flex;
+  justify-content: center;
+  padding: 100px 0;
+  width: 100%;
+  background: #F2EDE1;
+}
+
+.link_left {
+  margin-right: 100px;
+  width: 40%;
+  height: 600px;
+  background: #fff;
+}
+
+.link_right {
+  width: 40%;
+}
+
+.link_left_img {
+  width: 100%;
+  height: 300px;
+}
+
+.link_left_img img {
+  width: 100%;
+  height: 100%;
+}
+
+
+.link_right_img {
+  width: 250px;
+  height: 250px;
+}
+
+.link_right_img img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.link_left_txt {
+  position: relative;
+  padding: 5%;
+  height: 250px;
+}
+
+.link_left_txt h2 {
+  margin-bottom: 10px;
+  color: #593a2e;
+  font-size: 32px;
+}
+
+.link_left_txt span {
+  position: absolute;
+  right: 15%;
+  bottom: 15%;
+}
+
+.link_left_txt span::after {
+  position: absolute;
+  right: -75%;
+  bottom: -50%;
+  display: block;
+  width: 100%;
+  height: 50%;
+  background: url("/img/arrow.png") no-repeat;
+  background-size: contain;
+  content: "";
+}
+
+.link_item {
+  display: flex;
+  height: 250px;
+  background-color: #fff;
+}
+
+.link_item:last-child {
+  margin-top: 100px;
+}
+
+.link_right_txt {
+  position: relative;
+  padding: 5%;
+  width: 30%;
+  height: 175px;
+}
+
+.link_right_txt h2 {
+  margin-bottom: 10px;
+  color: #593a2e;
+  font-size:32px;
+}
+
+.link_right_txt span {
+  position: absolute;
+  right: 0%;
+  bottom: 8%;
+}
+
+.link_right_txt span::after {
+  position: absolute;
+  right: -75%;
+  bottom: -50%;
+  display: block;
+  width: 100%;
+  height: 50%;
+  background: url("/img/arrow.png") no-repeat;
+  background-size: contain;
+  content: "";
+}
+
+.access .inner {
+  position: relative;
+}
+
+.access_map {
+  width: 50%;
+  height: 700px;
+
+  -webkit-clip-path: circle(112% at 0 100%);
+  clip-path: circle(112% at 0 100%);
+}
+
+.access_map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.access_item {
+  position: absolute;
+  top: 10%;
+  right: 15%;
+  width: 18%;
+}
+
+.access_txt li {
+  margin-bottom: 8px;
+}
+
+.access_item .btn {
+  margin: 50px auto 0;
+  padding: 10px 20px;
+  width: 50%;
+  border-radius: 10px;
+  background: #40322B;
+  text-align: center;
+}
+
+.access_item .btn a {
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+}

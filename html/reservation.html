@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>Cafe xxx</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="確認テストのページです">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Quicksand:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"  type="text/css" href="../css/reset.css">
+    <link rel="stylesheet"  type="text/css" href="../css/common.css">
+    <link rel="stylesheet"  type="text/css" href="../css/reservation.css">
+  </head>
+  <body>
+    <header>
+      <div class="header_all">
+        <div class="header_top">
+          <h1 class="header_ttl">
+            <a href="#">CAFE xxx</a>
+          </h1>
+          <nav>
+            <ul>
+              <li><a href="../index.html">TOP</a></li>
+              <li><a href="../html/concept.html">CONCEPT</a></li>
+              <li><a href="../html/menu.html">MENU</a></li>
+              <li><a href="../html/reservation.html">RESERVATION</a></li>
+            </ul>
+          </nav>
+          <div class="header_right">
+            <a href="#" class="insta_icon"><img src="../img/instagram_b.png" alt="instagramのアイコン"></a>
+            <p class="drawer"></p>
+          </div>
+        </div>
+        <div class="header_visual">
+          <div class="header_img">
+            <img src="../img/top.jpg" alt="メインビジュアル">
+          </div>
+          <h2 class="header_txt">RESERVATION<small>ご予約</small></h2>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="reservation">
+        <div class="inner">
+          <div class="section_ttl">
+            <h2>RESERVATION</h2>
+          </div>
+          <form action="#" class="reservation_form" id="form">
+            <div class="reservation_box">
+              <label for="name" class="reservation_form_ttl">お名前</label>
+              <input type="text" class="reservation_form_box" name="" required="required" placeholder="お名前をご入力ください" id="name">
+            </div>
+            <div class="reservation_box">
+              <label for="tel" class="reservation_form_ttl">お電話番号</label>
+              <input type="text" class="reservation_form_box" name="" required="required" placeholder="例）080-xxxx-xxxx" id="tel">
+            </div>
+            <div class="reservation_box">
+              <label for="date" class="reservation_form_ttl">ご予約日時</label>
+              <input type="datetime-local" class="reservation_form_box" name="" required="required" id="date" >
+            </div>
+            <div class="reservation_box">
+              <label for="number" class="reservation_form_ttl">ご利用人数</label>
+              <select name="subject" class="reservation_form_box" required="required" id="number">
+                <optgroup>
+                  <option class="select_with" value="1">1人</option>
+                  <option class="select_with" value="2">2人</option>
+                  <option class="select_with" value="3">3人</option>
+                  <option class="select_with" value="4">4人</option>
+                </optgroup>
+              </select>
+            </div>
+            <div class="reservation_box _area">
+              <label for="message" class="reservation_form_ttl">ご要望</label>
+              <textarea name="message" class="reservation_textarea" id="message" cols="30" rows="10" placeholder="ご要望がありましたらご入力ください"></textarea>
+            </div>
+          </form>
+          <button type="submit" class="reservation_btn">予約する</button>
+        </div>
+      </section>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </body>
+</html>
