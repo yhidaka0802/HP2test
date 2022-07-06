@@ -5,14 +5,14 @@
 }
 
 .header_txt small {
-  font-size: 32px;
   display: block;
   border-top: solid 2px #35A693;
+  font-size: 32px;
 }
 
 .reservation_form {
-  width: 60%;
   margin: 0 auto;
+  width: 60%;
 }
 
 .reservation_box {
@@ -21,9 +21,9 @@
 }
 
 .reservation_form_box {
-  height: 45px;
-  width: 55%;
   padding-left: 12px;
+  width: 55%;
+  height: 45px;
 }
 
 .reservation_box._area {
@@ -31,24 +31,105 @@
 }
 
 .reservation_form_ttl {
+  position: relative;
+  top: 15px;
   width: 40%;
   height: 100%;
   font-size: 18px;
   line-height: 1.5;
-  position: relative;
-  top: 15px;
 }
 
 .reservation_form_ttl::before {
-  content: "必須";
   position: absolute;
-  left: 40%;
   top: -5px;
-  text-align: center;
+  left: 40%;
   width: 96px;
-  line-height: 32px;
-  font-size: 16px;
-  color: #c72930;
   border: 1px solid #c72930;
   border-radius: 2px;
+  color: #c72930;
+  content: "必須";
+  text-align: center;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.reservation_textarea {
+  margin-bottom: 50px;
+  padding: 12px;
+  width: 55%;
+  height: 200px;
+}
+
+.reservation_btn {
+  display: block;
+  margin: 0 auto 100px;
+  width: 200px;
+  height: 50px;
+  border-radius: 8px;
+  background: #40322B;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.reservation_btn:hover {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-transform: translateY(-4px);
+  transform: translateY(-4px);
+}
+
+
+@media screen and (max-width:768px) {
+  .reservation_form_ttl {
+    position: relative;
+    top: 15px;
+    width: 40%;
+    height: 100%;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .reservation_form {
+    width: 80%;
+  }
+}
+
+
+@media screen and (max-width:480px) {
+  .reservation_form {
+    width: 80%;
+  }
+  
+  .reservation_box {
+    display: block;
+    margin-bottom: 50px;
+  }
+  
+  .reservation_form_box {
+    width: 90%;
+    position: relative;
+    top: 30px;
+  }
+  
+  .reservation_form_ttl {
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  .reservation_form_ttl::before {
+    left: 120px;
+  }
+  
+  .reservation_textarea {
+    margin-bottom: 70px;
+    width: 90%;
+    height: 100px;
+    position: relative;
+    top: 30px;
+  }
 }
